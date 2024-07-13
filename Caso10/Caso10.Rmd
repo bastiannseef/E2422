@@ -1,0 +1,287 @@
+---
+title: "*Caso10 - Registros médicos*"
+author: "Sebastian Matias Romero Davila"
+date: "2024-07-13"
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    keep_tex: yes  # Mantener el archivo .tex generado
+    latex_engine: pdflatex  # Motor LaTeX a utilizar
+  html_document:
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    collapsed: yes
+    smooth_scroll: yes
+    theme: journal
+    highlight: kate
+    df_print: paged
+    code_folding: show
+---
+
+\newpage
+
+# *Base de datos inicial*
+Cargamos librerías a emplear
+
+```{r message=FALSE,warning=FALSE}
+library(tidyverse)
+library(rio) 
+library(kableExtra)
+```
+
+Base: base_registros_medicos 
+
+```{r message=FALSE,warning=FALSE}
+registros_medicos <- import("base_registros_medicos.csv")
+head(registros_medicos,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+
+# *Características Inherentes*
+
+## Exactitud
+
+Para la representación correcta de la realidad de los datos, empezamos identificando los tipos de variables
+
+```{r}
+registros_medicos %>% glimpse()
+```
+
+Luego, verificamos si existen inexactitudes
+
+- id_registro: Se encuentran valores enteros negativos
+
+- fecha_admision: Formato inadecuado 
+
+- fecha_admision > fecha_alta
+
+```{r}
+medinexactos <- registros_medicos %>% filter(
+  id_registro<0|substr(fecha_admision,3,3) == "-"|
+    (fecha_admision>fecha_alta)
+)
+head(medinexactos,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+## Completitud
+<!-- Medida en que todos los valores necesarios están presentes. -->
+
+En la tabla se observan valores faltantes en varias de las filas.
+
+```{r message=FALSE, warning=FALSE}
+registros_faltantes <- registros_medicos %>% 
+  filter(
+    if_any(everything(), is.na)
+  )
+head(registros_faltantes,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+Cantidad total de datos faltantes por cada columna en el conjunto de datos.
+
+```{r message=FALSE, warning=FALSE}
+na_registros <- colSums(is.na(registros_medicos))
+na_registros
+```
+
+Como hay una considerable cantidad de datos faltantes en las variables costo, diagnostico y estado, existe la ligera sospecha de encontrar alguna fila con las 3 variables vacías.
+
+```{r}
+med_faltante <- registros_medicos %>% filter(
+  is.na(costo) & is.na(diagnostico) & is.na(estado)
+)
+med_faltante %>% kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+No podemos rescatar estas filas, por lo que procedemos actualizar la base de datos sin considerarlas.
+
+```{r}
+registros_medicos1 <- registros_medicos %>% filter(
+  !(is.na(costo) & is.na(diagnostico) & is.na(estado)))
+```
+
+Entonces, ajustaremos los valores faltantes (NA) de la siguiente manera:
+
+diagnostico: Se reemplazará con "Sin diagnóstico".
+
+estado: Se reemplazará con "Sin determinar".
+
+costo: Se asignará como -1 en caso de estar ausente.
+
+```{r}
+registros_medicos2 <- registros_medicos1 %>% mutate(
+  diagnostico = case_when(
+    !is.na(diagnostico) ~ diagnostico,
+    is.na(diagnostico) ~ "Sin diagnóstico"
+  ),
+  estado = case_when(
+    !is.na(estado) ~ estado,
+    is.na(estado) ~ "Sin determinar"
+  ),
+  costo = case_when(
+    !is.na(costo) ~ costo,
+    is.na(costo) ~ -1
+  ),
+)
+head(registros_medicos2,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+## Consistencia
+<!-- Coherencia de los datos dentro del contexto. -->
+
+Previamente, se identificaron inconsistencias en las variables id_registro, fecha_admision y fecha_alta. Para abordar estas cuestiones, se realizaron las siguientes acciones:
+
+```{r}
+registros_medicos3 <- registros_medicos2 %>% mutate(
+  id_registro = abs(id_registro),
+  fecha_admision = as.Date(case_when(
+    substr(fecha_admision,3,3) == "-" ~ paste( substr(fecha_admision,7,10),
+                                              substr(fecha_admision,4,5),
+                                              substr(fecha_admision,1,2),
+                                              sep = "-"),
+    substr(fecha_admision,3,3) != "-" ~ fecha_admision)
+    ),
+  fecha_alta = as.Date(fecha_alta),
+  fecha_temporal = fecha_admision,
+    fecha_admision = case_when(
+      fecha_admision > fecha_alta ~ fecha_alta,
+      TRUE ~ fecha_admision
+    ),
+    fecha_alta = case_when(
+      fecha_temporal > fecha_alta ~ fecha_temporal,
+      TRUE ~ fecha_alta
+    )
+  ) %>% select(-fecha_temporal)
+head(registros_medicos3,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+Nos piden crear variables para la duración de estadía y el mes de admisión
+
+```{r}
+registros_medicos4 <- registros_medicos3 %>% 
+  mutate(
+    estadia_dias = as.integer(trunc(difftime(fecha_alta,fecha_admision,
+                                                 units = "days"))),
+    mes_transaccion = format(fecha_admision, "%B")
+)
+head(registros_medicos4,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+Por último, generamos un listado de pacientes con estadia anormalmente larga o corta en pacientes dados de alta, tomando en cuenta los cuartiles 1 y 3, fuera de ese rango se ubican los datos anormales. Este intervalo será calculado por el tipo de diagnóstico detectado.
+
+```{r}
+quantiles_diagnosticos <- registros_medicos4 %>%
+  filter(estado == "Alta" & costo != -1) %>% 
+  select(diagnostico,estadia_dias) %>% 
+  group_by(diagnostico) %>%
+  mutate(
+    cuantil1 = quantile(estadia_dias,0.25),
+    cuantil3 = quantile(estadia_dias,0.75),
+  ) %>% distinct(diagnostico, cuantil1, cuantil3)
+head(quantiles_diagnosticos,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+Obteniendo la siguiente tabla
+
+```{r}
+pacientes_alta <- registros_medicos4 %>%
+  filter(estado == "Alta" & costo != -1)
+
+estadias_anormales <- pacientes_alta %>%
+  select(diagnostico,estadia_dias,id_paciente) %>%
+  group_by(diagnostico) %>%
+  mutate(
+    cuantil1 = quantile(estadia_dias,0.25),
+    cuantil3 = quantile(estadia_dias,0.75),
+    estadia_meses = trunc(estadia_dias/30),
+  ) %>% ungroup() %>% 
+  filter(estadia_dias < cuantil1 | estadia_dias > cuantil3) %>%
+  arrange(diagnostico,desc(estadia_dias),estadia_meses) %>% 
+  select(diagnostico,id_paciente,estadia_dias,estadia_meses)
+head(estadias_anormales,10) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+También, generamos una lista de los acientes con costos sospechosos
+
+```{r}
+costos_pacientes_sospechosos <- registros_medicos4 %>% 
+  filter(estado == "Alta" & costo != -1) %>%
+  select(id_paciente,costo) %>% 
+  group_by(id_paciente) %>% 
+  summarise(valor_total = sum(costo)) %>% 
+  arrange(desc(valor_total))
+head(costos_pacientes_sospechosos,15) %>%
+kable(booktabs = TRUE,format = "latex")%>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+# *Características Dependientes del sistema*
+
+## Disponibilidad
+Medida en que los datos están disponibles y accesibles cuando se necesitan.
+
+https://github.com/bastiannseef/E2422/tree/main/Caso10/data_procesada_caso10
+
+## Portabilidad
+Para trasladar los datos evaluados bajo el criterio de calidad de la norma ISO/IEC 25012 entre sistemas, guardamos las bases de datos procesadas en archivos “.csv” y también, en formato “.rds” para garantizar eficiencia, portabilidad y seguridad.
+
+Encontrará los siguientes archivos:
+
+- data_caso10.csv: Data general evaluada por los criterios de calidad en formato ".csv".
+
+- data_caso10.rds: Data general evaluada por los criterios de calidad en formato ".rds".
+
+- estadias_anormales.csv: Data estadías anormales de pacientes en formato ".csv".
+
+- estadias_anormales.rds: Data estadías anormales de pacientes en formato ".rds".
+
+- costos_pacientes_sospechosos.csv: Data costos anormales de pacientes en formato ".rds".
+
+- costos_pacientes_sospechosos.rds: Data costos anormales de pacientes en formato ".rds".
+
+
+```{r}
+data.frame(registros_medicos3) %>%
+  saveRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/datos_caso10.rds")
+
+data.frame(estadias_anormales) %>%
+  saveRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/estadias_anormales.rds")
+
+data.frame(costos_pacientes_sospechosos) %>%
+  saveRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/pacientes_sospechosos.rds")
+
+readRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/datos_caso10.rds") %>%
+  export("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/data_caso10.csv")
+
+readRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/estadias_anormales.rds") %>%
+  export("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/estadias_anormales.csv")
+
+readRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/pacientes_sospechosos.rds") %>%
+  export("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso10/data_procesada_caso10/pacientes_sospechosos.csv")
+
+
+```
+
+
+
+
+
+

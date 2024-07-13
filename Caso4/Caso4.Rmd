@@ -1,0 +1,216 @@
+---
+title: "*Caso4 - Pólizas*"
+author: "Sebastian Matias Romero Davila"
+date: "2024-07-10"
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    keep_tex: yes  # Mantener el archivo .tex generado
+    latex_engine: pdflatex  # Motor LaTeX a utilizar
+  html_document:
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    collapsed: yes
+    smooth_scroll: yes
+    theme: journal
+    highlight: kate
+    df_print: paged
+    code_folding: show
+---
+
+\newpage
+
+# *Base de datos inicial*
+Cargamos librerías a emplear
+
+```{r message=FALSE,warning=FALSE}
+library(tidyverse)
+library(rio) 
+library(kableExtra)
+```
+
+Base: base_polizas 
+
+```{r message=FALSE,warning=FALSE}
+base_polizas <- import("base_polizas.csv")
+head(base_polizas,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+
+# *Características Inherentes*
+
+## Exactitud
+
+Para la representación correcta de la realidad de los datos, empezamos identificando los tipos de variables
+
+```{r}
+base_polizas %>% glimpse()
+```
+
+Luego, verificamos si existen inexactitudes
+
+- id_poliza: Se encuentran valores enteros negativos
+
+- fecha_inicio: Formato inadecuado
+
+
+```{r}
+inexactospol <- base_polizas %>% filter(
+  id_poliza<0|substr(fecha_inicio,3,3) == "-"
+)
+head(inexactospol,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+
+## Completitud
+<!-- Medida en que todos los valores necesarios están presentes -->
+
+En la tabla se observan valores faltantes en varias de las filas.
+
+```{r message=FALSE, warning=FALSE}
+polizas_faltantes <- base_polizas %>%
+  filter(
+    if_any(everything(), is.na)
+  )
+head(polizas_faltantes,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+Cantidad total de datos faltantes por cada columna en el conjunto de datos.
+
+```{r message=FALSE, warning=FALSE}
+na_polizas <- colSums(is.na(base_polizas))
+na_polizas
+```
+
+Entonces, ajustaremos los valores faltantes (NA) de la siguiente manera:
+
+nombre_cliente: Se reemplazará con "Desconocido".
+
+estado: Se reemplazará con "Indeterminado".
+
+monto_cobertura: Se asignará como -1 en caso de estar ausente.
+
+```{r}
+base1 <- base_polizas %>% mutate(
+  nombre_cliente = case_when(
+    !is.na(nombre_cliente) ~ nombre_cliente,
+    is.na(nombre_cliente) ~ "Desconocido"
+  ),
+  monto_cobertura = case_when(
+    !is.na(monto_cobertura) ~ monto_cobertura,
+    is.na(monto_cobertura) ~ -1
+  ),
+  estado = case_when(
+    !is.na(estado) ~ estado,
+    is.na(estado) ~ "Indeterminado"
+  )
+)
+head(base1,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+## Consistencia
+<!-- Coherencia de los datos dentro del contexto. -->
+
+Previamente, se identificaron inconsistencias en las variables id_poliza y nombre_cliente, así como un problema con el formato de las variables nombre_cliente, fecha_inicio y fecha_fin. Para abordar estas cuestiones, se realizaron las siguientes acciones:
+
+```{r}
+base2 <- base1 %>% mutate(
+  id_poliza = abs(id_poliza),
+  nombre_cliente = as.character(nombre_cliente),
+  fecha_inicio = as.Date(case_when(
+    substr(fecha_inicio,3,3) == "-" ~ paste( substr(fecha_inicio,7,10),
+                                              substr(fecha_inicio,4,5),
+                                              substr(fecha_inicio,1,2),
+                                              sep = "-"),
+    substr(fecha_inicio,3,3) != "-" ~ fecha_inicio)
+    ),
+  fecha_fin = as.Date(fecha_fin),
+  monto_cobertura = round(monto_cobertura,2)) %>%
+  arrange(id_poliza)
+
+head(base2,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+Finalmente, nos piden crear una variable para la antigüedad de la póliza en años.
+
+```{r}
+base3 <- base2 %>% filter(monto_cobertura != -1) %>% mutate(
+    fecha_temporal = fecha_inicio,
+    fecha_inicio = case_when(
+      fecha_inicio > fecha_fin ~ fecha_fin,
+      TRUE ~ fecha_inicio
+    ),
+    fecha_fin = case_when(
+      fecha_temporal > fecha_fin ~ fecha_temporal,
+      TRUE ~ fecha_fin
+    )
+) %>% select(-fecha_temporal)
+head(base3,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+También, filtrar las pólizas activas.
+
+```{r}
+polizas_activas <- base3 %>% mutate(
+  antiguedad_años = as.integer(trunc(difftime(fecha_fin,fecha_inicio)/360))
+) %>% filter(estado == "Activa")
+head(polizas_activas,10) %>%
+kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+```
+
+
+# *Características Dependientes del sistema*
+
+## Disponibilidad
+Medida en que los datos están disponibles y accesibles cuando se necesitan.
+
+https://github.com/bastiannseef/E2422/tree/main/Caso4/data_procesada_caso4
+
+## Portabilidad
+Para trasladar los datos evaluados bajo el criterio de calidad de la norma ISO/IEC 25012 entre sistemas, guardamos las bases de datos procesadas en archivos “.csv” y también, en formato “.rds” para garantizar eficiencia, portabilidad y seguridad.
+
+Encontrará los siguientes archivos:
+
+- data_caso4.csv: Data general evaluada por los criterios de calidad en formato ".csv".
+
+- data_caso4.rds: Data general evaluada por los criterios de calidad en formato ".rds".
+
+- polizas_activas.csv: Data pólizas activas en formato ".csv".
+
+- polizas_activas.rds: Data pólizas activas en formato ".rds".
+
+
+```{r}
+data.frame(base3) %>%
+  saveRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso4/data_procesada_caso4/datos_caso4.rds")
+
+readRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso4/data_procesada_caso4/datos_caso4.rds") %>%
+  export("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso4/data_procesada_caso4/data_caso4.csv")
+
+data.frame(polizas_activas) %>%
+  saveRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso4/data_procesada_caso4/polizas_activas.rds")
+
+readRDS("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso4/data_procesada_caso4/polizas_activas.rds") %>%
+  export("C:/Users/Sebastian/OneDrive/Escritorio/Repaso/Caso4/data_procesada_caso4/polizas_activas.csv")
+
+```
+
+
+
+
+

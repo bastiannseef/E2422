@@ -1,0 +1,99 @@
+diagnostico,id_paciente,estadia_dias,estadia_meses
+COVID-19,214,1446,48
+COVID-19,288,1171,39
+COVID-19,130,1121,37
+COVID-19,229,967,32
+COVID-19,217,953,31
+COVID-19,74,931,31
+COVID-19,141,927,30
+COVID-19,295,903,30
+COVID-19,98,889,29
+COVID-19,278,859,28
+COVID-19,79,847,28
+COVID-19,124,296,9
+COVID-19,177,237,7
+COVID-19,141,202,6
+COVID-19,67,179,5
+COVID-19,71,136,4
+COVID-19,200,134,4
+COVID-19,284,98,3
+COVID-19,68,36,1
+COVID-19,296,28,0
+COVID-19,16,15,0
+COVID-19,216,1,0
+Fractura,77,1283,42
+Fractura,111,1085,36
+Fractura,283,848,28
+Fractura,197,830,27
+Fractura,287,758,25
+Fractura,180,741,24
+Fractura,113,734,24
+Fractura,243,731,24
+Fractura,11,683,22
+Fractura,134,191,6
+Fractura,221,175,5
+Fractura,278,139,4
+Fractura,284,131,4
+Fractura,40,85,2
+Fractura,252,55,1
+Fractura,154,41,1
+Fractura,44,28,0
+Fractura,18,20,0
+Gastritis,194,1410,47
+Gastritis,229,1230,41
+Gastritis,215,1207,40
+Gastritis,142,1040,34
+Gastritis,286,977,32
+Gastritis,122,933,31
+Gastritis,260,883,29
+Gastritis,20,873,29
+Gastritis,12,831,27
+Gastritis,67,830,27
+Gastritis,61,821,27
+Gastritis,222,808,26
+Gastritis,128,137,4
+Gastritis,201,127,4
+Gastritis,65,121,4
+Gastritis,209,113,3
+Gastritis,13,108,3
+Gastritis,216,87,2
+Gastritis,296,82,2
+Gastritis,86,62,2
+Gastritis,109,48,1
+Gastritis,251,48,1
+Gastritis,244,29,0
+Gastritis,214,10,0
+Neumonía,61,1288,42
+Neumonía,233,1275,42
+Neumonía,81,1238,41
+Neumonía,288,1089,36
+Neumonía,5,1079,35
+Neumonía,186,1055,35
+Neumonía,94,818,27
+Neumonía,274,711,23
+Neumonía,126,199,6
+Neumonía,151,150,5
+Neumonía,51,130,4
+Neumonía,145,88,2
+Neumonía,51,33,1
+Neumonía,37,31,1
+Neumonía,166,25,0
+Neumonía,113,19,0
+Sin diagnóstico,52,1155,38
+Sin diagnóstico,165,899,29
+Sin diagnóstico,78,855,28
+Sin diagnóstico,15,834,27
+Sin diagnóstico,282,833,27
+Sin diagnóstico,41,769,25
+Sin diagnóstico,264,731,24
+Sin diagnóstico,264,707,23
+Sin diagnóstico,11,707,23
+Sin diagnóstico,134,174,5
+Sin diagnóstico,24,169,5
+Sin diagnóstico,233,148,4
+Sin diagnóstico,195,128,4
+Sin diagnóstico,8,53,1
+Sin diagnóstico,256,42,1
+Sin diagnóstico,201,12,0
+Sin diagnóstico,135,7,0
+Sin diagnóstico,116,4,0

@@ -1,0 +1,151 @@
+id_envío,origen,destino,fecha_envío,fecha_entrega,monto_envío,duración_envío_meses
+45,Arequipa,Trujillo,2022-10-11,2023-11-28,62.21,13
+12,Lima,Trujillo,2022-01-21,2022-07-09,847.67,5
+42,Piura,Trujillo,2022-12-19,2023-06-08,797.43,5
+26,Piura,Trujillo,2022-02-28,2023-02-07,360.84,11
+99,Lima,Piura,2022-03-10,2022-08-06,680.95,4
+37,Cusco,Arequipa,2022-08-04,2023-02-05,145.89,6
+100,Trujillo,Trujillo,2022-02-15,2023-12-17,456.54,22
+43,Cusco,Trujillo,2022-03-10,2022-07-02,194.23,3
+67,Cusco,Cusco,2022-03-29,2023-06-15,431.59,14
+70,Arequipa,Lima,2022-02-18,2022-04-23,645.28,2
+52,Arequipa,No identificado,2023-07-29,2023-12-10,50.82,4
+47,Trujillo,Arequipa,2023-11-25,2023-11-25,514.64,0
+48,Cusco,No identificado,2022-03-26,2023-10-31,311.18,19
+6,Piura,Trujillo,2022-11-06,2023-11-20,757.16,12
+29,No identificado,Piura,2022-02-21,2023-05-05,-1,14
+21,Piura,Arequipa,2022-07-02,2023-09-09,376.15,14
+12,Trujillo,Cusco,2023-01-16,2023-06-25,673.88,5
+66,Cusco,Trujillo,2022-05-29,2022-09-25,390.1,3
+54,Piura,Piura,2022-01-21,2022-09-12,487.11,7
+39,Arequipa,Piura,2023-08-24,2023-12-31,251.41,4
+24,No identificado,Piura,2023-05-31,2023-09-12,203.06,3
+88,Piura,Piura,2023-05-30,2023-12-20,790.71,6
+30,Piura,Arequipa,2022-12-07,2023-08-30,630.38,8
+61,Arequipa,No identificado,2023-03-05,2023-08-05,909.37,5
+59,No identificado,No identificado,2022-10-09,,548.43,
+90,No identificado,Arequipa,2022-06-10,2023-10-10,556.67,16
+53,Trujillo,Arequipa,2022-10-15,2023-09-04,176.79,10
+72,Arequipa,No identificado,2022-03-16,2022-06-14,129.95,3
+32,No identificado,Piura,2022-07-07,2023-07-04,344.51,12
+59,Trujillo,Lima,2022-08-13,2023-05-20,-1,9
+15,No identificado,Arequipa,2022-12-06,2023-04-05,279.55,4
+42,Piura,Arequipa,2022-03-13,2023-09-04,618.67,18
+59,Cusco,Cusco,2023-05-17,2023-10-17,309.73,5
+92,Piura,Trujillo,2022-03-31,2022-11-16,475.99,7
+16,Trujillo,Cusco,2022-10-21,2023-06-11,824.56,7
+76,Arequipa,Arequipa,2022-11-26,2022-12-17,583.06,0
+97,Trujillo,Piura,2022-03-19,2022-08-10,128.69,4
+87,Piura,Cusco,2022-09-29,2023-09-09,62.31,11
+50,Cusco,No identificado,2022-04-23,2023-11-16,374.27,19
+74,No identificado,Lima,2023-09-15,2023-12-31,720.15,3
+17,Trujillo,Arequipa,2022-03-07,2022-06-20,257.28,3
+94,Trujillo,Cusco,2022-02-13,2022-11-10,325.01,9
+32,No identificado,Piura,2022-10-23,2023-01-25,636.94,3
+12,No identificado,Piura,2022-08-05,2022-12-02,157.24,3
+4,Arequipa,Arequipa,2022-10-06,2023-12-06,-1,14
+5,Piura,Cusco,2023-04-03,2023-08-14,999.04,4
+88,No identificado,Lima,2022-09-06,2023-12-22,374.33,15
+82,Trujillo,No identificado,2022-04-03,2023-11-26,787.26,20
+84,Cusco,Arequipa,2022-07-09,2022-11-17,726.88,4
+22,Arequipa,Cusco,2022-05-22,,775.83,
+19,Cusco,Arequipa,2022-10-19,2023-03-12,207.28,4
+90,Arequipa,No identificado,2022-07-23,2022-08-07,713.59,0
+59,Cusco,Cusco,2022-07-07,2023-04-16,227.28,9
+26,Cusco,Lima,2022-06-02,2023-09-01,680.49,15
+48,Cusco,Piura,2022-04-29,2023-09-10,628.27,16
+25,No identificado,Arequipa,2022-05-27,2022-06-26,196.19,1
+32,No identificado,Arequipa,2022-05-03,2023-04-01,635.81,11
+2,Lima,Lima,2022-01-23,2023-04-13,293.57,14
+54,Cusco,Arequipa,2022-01-24,2022-03-14,255.52,1
+70,Arequipa,Lima,2022-10-29,2023-12-31,-1,14
+31,Trujillo,No identificado,2022-09-24,2023-12-16,922.07,14
+24,No identificado,Piura,2023-07-20,2023-11-24,245.54,4
+13,Arequipa,Piura,2022-02-08,2023-12-07,386.27,22
+94,Arequipa,Lima,2022-01-27,2022-02-22,344.57,0
+5,Piura,Arequipa,2023-03-21,2023-04-04,941.17,0
+66,Trujillo,Lima,2022-08-04,2022-10-04,778.78,2
+5,Arequipa,No identificado,2022-11-01,2022-12-15,680.9,1
+80,No identificado,No identificado,2023-09-14,2023-11-22,816.93,2
+37,Cusco,Trujillo,2022-12-21,2023-12-22,876.22,12
+1,No identificado,Trujillo,2022-04-16,2022-07-21,392.12,3
+41,Lima,Piura,2023-02-15,2023-10-29,338.37,8
+23,Lima,Cusco,2023-02-13,2023-07-08,878.05,4
+1,Arequipa,Cusco,2022-08-24,2022-10-06,827.36,1
+2,Piura,Cusco,2022-02-18,2022-10-06,566.16,7
+67,Cusco,Piura,2023-04-25,,-1,
+46,Arequipa,Trujillo,2022-11-26,2022-12-19,427.05,0
+68,Piura,Piura,2022-10-24,2023-12-26,562.15,14
+34,Arequipa,Arequipa,2023-05-09,2023-07-19,98.74,2
+54,Lima,Trujillo,2022-05-05,2023-08-17,242.23,15
+34,Trujillo,No identificado,2022-08-07,2023-12-31,336.53,17
+100,Cusco,Trujillo,2022-03-05,2023-12-08,206.05,21
+99,Cusco,Lima,2022-05-17,2023-06-21,650.8,13
+83,Trujillo,Lima,2022-02-10,2023-04-19,535.4,14
+88,No identificado,Trujillo,2022-12-06,2023-07-09,94.18,7
+17,No identificado,Lima,2022-01-07,2023-10-19,694.06,21
+52,Cusco,Lima,2022-12-07,2023-03-04,795.77,2
+28,Piura,No identificado,2022-10-27,2023-03-10,633.14,4
+20,Piura,Trujillo,2023-02-11,2023-07-25,316.18,5
+11,Cusco,Trujillo,2022-05-11,2023-05-06,680.86,12
+70,No identificado,Cusco,2022-12-21,2022-12-28,-1,0
+80,No identificado,Arequipa,2022-09-30,2023-10-12,881.71,12
+41,Cusco,Arequipa,2022-03-15,2023-01-21,322.54,10
+70,No identificado,Piura,2023-02-19,2023-08-01,318.77,5
+15,No identificado,Cusco,2022-05-01,2023-02-04,155.56,9
+34,Arequipa,No identificado,2022-11-14,2023-02-25,669.68,3
+88,Arequipa,Lima,2022-05-20,2023-09-12,570.7,16
+38,Trujillo,Trujillo,2022-05-26,2022-09-05,565.97,3
+77,Arequipa,Lima,2022-05-13,2023-05-30,947.52,12
+9,Trujillo,Arequipa,2022-02-07,2022-11-27,563.68,9
+23,Arequipa,No identificado,2023-12-31,,519.09,
+76,Cusco,Piura,2022-09-25,2023-03-22,497.8,5
+78,Trujillo,Lima,2022-11-05,2023-08-14,229.52,9
+40,Piura,Piura,2022-05-24,2023-06-07,581.71,12
+3,Piura,Lima,2022-01-09,2022-03-03,438.91,1
+75,Lima,No identificado,2022-08-24,2022-10-02,-1,1
+37,Arequipa,Arequipa,2022-01-19,2023-06-30,580.38,17
+90,Lima,Arequipa,2022-04-26,2022-12-28,893.43,8
+100,Piura,Arequipa,2022-06-12,2023-01-05,663.31,6
+56,Trujillo,Cusco,2022-05-23,2022-11-05,836.74,5
+100,No identificado,Lima,2022-05-09,2022-08-13,480.63,3
+14,Trujillo,Piura,2022-04-23,2023-01-17,246.96,8
+48,No identificado,No identificado,2023-07-14,2023-09-16,454.95,2
+28,Trujillo,Lima,2023-07-04,2023-09-19,783.72,2
+35,Arequipa,Piura,2022-09-09,2023-09-16,817.44,12
+76,No identificado,Piura,2023-01-11,2023-01-17,720.54,0
+81,Cusco,Piura,2023-06-20,2023-11-21,857.03,5
+17,No identificado,Cusco,2022-02-15,2023-03-07,850.24,12
+41,Piura,Cusco,2022-08-26,2023-05-10,949.73,8
+89,Lima,No identificado,2022-10-02,2023-09-16,757.34,11
+81,Trujillo,Trujillo,2023-10-12,2023-12-31,-1,2
+15,Arequipa,Piura,2022-02-26,2023-02-25,973.08,12
+19,No identificado,Trujillo,2022-05-17,2022-06-18,550.08,1
+70,Trujillo,Lima,2022-09-09,2023-09-10,210.57,12
+10,Trujillo,No identificado,2023-08-08,2023-11-08,747.64,3
+67,Trujillo,No identificado,2023-10-06,,374.55,
+27,Arequipa,Cusco,2022-11-05,2023-04-03,776.79,4
+62,Trujillo,Piura,2022-01-01,2022-05-10,959.49,4
+100,Lima,Arequipa,2023-06-29,2023-08-27,562.67,1
+23,Cusco,Cusco,2022-01-20,2022-02-08,355.16,0
+90,Arequipa,Lima,2022-03-31,2022-06-23,251.19,2
+71,Piura,Trujillo,2022-05-08,2023-01-14,957.91,8
+67,No identificado,Cusco,2023-10-28,2023-12-14,470.96,1
+53,Arequipa,Arequipa,2023-10-31,2023-11-13,492.79,0
+87,Cusco,Lima,2022-07-04,2023-03-06,617.94,8
+28,Lima,No identificado,2022-11-04,2023-11-02,-1,12
+89,Arequipa,No identificado,2022-05-03,2023-06-09,847.94,13
+21,Arequipa,Trujillo,2022-01-12,2023-01-20,254.84,12
+24,Arequipa,Piura,2022-12-25,2023-06-23,855.2,6
+83,Piura,Trujillo,2023-01-07,2023-04-16,582.38,3
+50,No identificado,Lima,2022-10-15,2023-12-31,627.74,14
+63,Piura,Lima,2022-05-29,2023-10-13,612.15,16
+45,Piura,Lima,2022-05-24,2023-01-12,780.27,7
+88,Piura,Lima,2022-09-26,2023-09-20,448.09,11
+14,Arequipa,Cusco,2022-03-23,2023-12-18,587.06,21
+24,No identificado,Lima,2022-08-22,2023-10-29,958.86,14
+52,Piura,Lima,2023-06-16,2023-12-31,730.84,6
+55,No identificado,Piura,2022-01-06,2022-02-17,129.16,1
+17,Lima,Cusco,2022-11-04,2023-01-28,50.22,2
+33,No identificado,No identificado,2022-05-20,2023-12-24,362.29,19
+74,No identificado,Lima,2022-10-12,,-1,

@@ -1,0 +1,37 @@
+origen,destino,mean_duración_envío_meses
+Arequipa,Arequipa,6
+Arequipa,Cusco,8
+Arequipa,Lima,7
+Arequipa,No identificado,4
+Arequipa,Piura,11
+Arequipa,Trujillo,8
+Cusco,Arequipa,5
+Cusco,Cusco,7
+Cusco,Lima,9
+Cusco,No identificado,19
+Cusco,Piura,8
+Cusco,Trujillo,10
+Lima,Arequipa,4
+Lima,Cusco,3
+Lima,Lima,14
+Lima,No identificado,8
+Lima,Piura,6
+Lima,Trujillo,10
+No identificado,Arequipa,8
+No identificado,Cusco,5
+No identificado,Lima,11
+No identificado,No identificado,7
+No identificado,Piura,5
+No identificado,Trujillo,3
+Piura,Arequipa,9
+Piura,Cusco,7
+Piura,Lima,8
+Piura,No identificado,4
+Piura,Piura,9
+Piura,Trujillo,7
+Trujillo,Arequipa,5
+Trujillo,Cusco,6
+Trujillo,Lima,8
+Trujillo,No identificado,13
+Trujillo,Piura,5
+Trujillo,Trujillo,9

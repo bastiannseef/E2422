@@ -1,0 +1,600 @@
+id_transaccion,id_cliente,fecha_transaccion,monto,tipo_transaccion,estado_transaccion,last_transaction_days
+311,1,2022-03-17,9145.8,Retiro,Completada,32
+93,1,2022-02-13,6149.79,Depósito,Pendiente,261
+395,1,2021-05-28,5629.33,Transferencia,Completada,
+257,1,2022-09-22,1972.16,Retiro,Completada,189
+449,1,2023-12-18,1862.8,Transferencia,Completada,452
+79,2,2023-07-07,8698.65,Depósito,Fallida,647
+110,2,2023-11-07,7271.92,Transferencia,Completada,89
+384,2,2023-08-10,6398.2,Transferencia,Indeterminado,34
+192,2,2021-09-28,2151.01,Transferencia,Fallida,103
+436,2,2021-02-08,1890.75,No identificado,Pendiente,
+139,2,2021-06-17,384.14,No identificado,Indeterminado,129
+373,3,2021-06-03,8498.73,Retiro,Pendiente,
+379,3,2021-09-24,2151.6,Depósito,Pendiente,113
+283,4,2022-12-29,9251.25,No identificado,Completada,348
+500,4,2023-10-25,7028.24,Retiro,Pendiente,300
+44,4,2022-01-15,5479.98,Transferencia,Pendiente,201
+177,4,2023-11-19,1937.97,Depósito,Fallida,25
+163,4,2021-06-28,-1,Transferencia,Invalido,
+189,5,2023-11-16,7250.88,Retiro,Pendiente,576
+266,5,2022-03-22,4677.37,No identificado,Pendiente,
+446,5,2022-04-19,1844.46,Depósito,Pendiente,28
+338,6,2023-06-01,7546.72,Transferencia,Indeterminado,63
+57,6,2023-03-30,7095.26,Transferencia,Completada,313
+113,6,2022-05-21,6349.79,Transferencia,Pendiente,
+162,6,2023-12-31,4360.22,No identificado,Pendiente,213
+346,7,2023-03-23,2741.53,Depósito,Indeterminado,
+394,7,2023-06-23,434.75,Transferencia,Indeterminado,92
+173,8,2023-06-04,1734.37,Transferencia,Pendiente,801
+282,8,2021-03-25,790.69,Depósito,Pendiente,
+361,9,2022-07-27,9659.64,Transferencia,Indeterminado,
+227,9,2023-06-08,8987.5,Retiro,Completada,84
+200,9,2022-11-23,8633.64,Transferencia,Pendiente,119
+274,9,2023-12-22,3258.47,No identificado,Indeterminado,197
+208,9,2023-03-16,2699.09,Retiro,Indeterminado,113
+134,10,2023-01-31,6178.46,Depósito,Fallida,531
+245,10,2021-08-18,2675.92,No identificado,Completada,166
+320,10,2021-03-05,2345.51,No identificado,Fallida,
+149,11,2023-06-02,8816.43,Depósito,Fallida,767
+162,11,2023-11-09,5706.82,Retiro,Pendiente,160
+273,11,2021-04-26,2544.49,Retiro,Completada,
+166,12,2022-07-02,7079.18,No identificado,Pendiente,205
+180,12,2021-12-09,2896.2,Retiro,Indeterminado,
+232,12,2023-05-08,2773.15,No identificado,Indeterminado,310
+391,13,2022-08-20,219.57,Retiro,Fallida,381
+95,13,2021-08-04,-1,Depósito,Indeterminado,
+231,14,2022-07-18,9233.57,Depósito,Completada,42
+314,14,2022-06-06,5799.83,Retiro,Pendiente,
+55,15,2021-04-19,4682.08,Retiro,Pendiente,
+144,15,2022-09-04,4530.12,Retiro,Pendiente,294
+116,15,2021-11-14,2001.03,No identificado,Fallida,209
+432,16,2023-11-05,9998.65,Depósito,Completada,142
+396,16,2023-12-31,8765.1,Retiro,Indeterminado,56
+442,16,2023-06-16,8701.73,Depósito,Indeterminado,645
+284,16,2021-09-09,153.85,No identificado,Completada,
+411,17,2022-07-17,7420.62,Transferencia,Fallida,
+108,17,2023-07-02,2929.18,No identificado,Indeterminado,350
+446,18,2021-03-09,8946.99,Retiro,Fallida,
+255,18,2022-01-29,2396.58,Transferencia,Completada,326
+460,18,2023-12-31,-1,Transferencia,Completada,701
+104,19,2021-06-15,8569.7,No identificado,Fallida,
+203,19,2021-10-03,4492.38,No identificado,Indeterminado,110
+480,19,2022-07-03,3574.25,Retiro,Fallida,273
+228,19,2023-01-13,2336.74,Retiro,Invalido,194
+232,20,2022-05-02,6789.77,No identificado,Fallida,137
+180,20,2021-12-16,6763.26,Depósito,Indeterminado,
+2,20,2023-01-08,2335.6,Retiro,Fallida,53
+430,20,2023-06-25,1181.01,Depósito,Indeterminado,168
+343,20,2022-11-16,-1,Retiro,Pendiente,198
+4,21,2023-09-15,7804.79,Retiro,Completada,20
+104,21,2023-08-26,4845.76,Transferencia,Fallida,265
+165,21,2022-12-04,4408.22,Depósito,Indeterminado,174
+139,21,2023-12-20,3282.54,No identificado,Pendiente,96
+494,21,2022-06-13,2141.7,Depósito,Indeterminado,
+188,22,2023-10-06,5909.7,Depósito,Indeterminado,
+454,23,2023-03-18,7944.67,No identificado,Indeterminado,167
+381,23,2022-06-05,5069.85,No identificado,Completada,148
+89,23,2022-01-08,4789.71,No identificado,Fallida,
+459,23,2022-10-02,3851.12,No identificado,Fallida,119
+257,24,2022-01-29,7320.11,Retiro,Completada,213
+144,24,2023-03-18,5078.37,Retiro,Pendiente,413
+145,24,2021-06-30,3507.08,No identificado,Completada,
+399,25,2023-12-10,678.5,Transferencia,Completada,496
+168,25,2022-08-01,662.72,Depósito,Completada,307
+170,25,2021-09-28,-1,Depósito,Indeterminado,
+370,26,2021-10-25,9988.15,No identificado,Completada,33
+179,26,2021-09-22,8990.76,No identificado,Indeterminado,179
+352,26,2021-03-27,8959.37,Retiro,Fallida,
+489,26,2022-11-22,6367.81,Depósito,Pendiente,393
+114,27,2021-10-10,1890.36,No identificado,Indeterminado,
+364,27,2022-06-25,-1,Transferencia,Invalido,258
+387,28,2021-12-09,7765.12,No identificado,Completada,245
+54,28,2021-04-08,2459.97,Transferencia,Fallida,
+442,29,2021-08-31,9252.54,No identificado,Fallida,
+429,29,2023-09-14,8079.31,Depósito,Completada,94
+439,29,2022-05-13,6421.26,Depósito,Fallida,255
+400,29,2023-06-12,5647.98,Depósito,Fallida,276
+332,29,2022-09-09,2000.66,Transferencia,Indeterminado,119
+249,29,2023-12-12,1302.29,Depósito,Fallida,89
+351,30,2021-04-21,8534.64,Transferencia,Pendiente,
+417,30,2021-08-15,5690.6,No identificado,Fallida,116
+155,30,2022-03-29,4896.1,Depósito,Indeterminado,225
+304,30,2022-10-15,4572.23,Depósito,Completada,200
+379,30,2023-01-23,3279.17,Retiro,Indeterminado,100
+223,30,2021-08-16,2980.55,Depósito,Indeterminado,1
+392,30,2023-12-31,-1,Transferencia,Pendiente,342
+110,31,2023-09-24,5967.2,Depósito,Indeterminado,268
+248,31,2022-07-09,1618.94,Retiro,Indeterminado,
+318,31,2022-12-30,149.93,Depósito,Completada,174
+446,32,2021-03-21,9595.09,Retiro,Pendiente,
+88,32,2022-05-12,9184.7,Retiro,Pendiente,43
+301,32,2022-03-30,7775.38,Transferencia,Indeterminado,374
+311,33,2022-04-30,4594.21,Retiro,Invalido,
+44,34,2021-08-18,4860.43,Transferencia,Completada,
+42,34,2022-10-06,397.76,No identificado,Pendiente,414
+71,35,2023-09-12,9038.66,Transferencia,Pendiente,41
+334,35,2023-08-02,2667.74,Depósito,Invalido,300
+295,36,2023-12-31,2280.28,No identificado,Fallida,777
+331,36,2021-11-14,319.69,Depósito,Fallida,
+6,37,2023-10-17,3862.23,Retiro,Pendiente,380
+274,37,2022-10-02,2672.03,No identificado,Pendiente,
+22,37,2023-11-03,266.68,Transferencia,Completada,17
+36,37,2023-12-31,-1,Transferencia,Invalido,58
+407,38,2022-06-09,8062.85,Depósito,Fallida,16
+7,38,2022-07-01,4196.27,No identificado,Pendiente,22
+56,38,2022-08-24,3185.71,Depósito,Fallida,54
+45,38,2021-04-22,1774.47,Retiro,Pendiente,
+228,38,2022-02-28,221.49,Transferencia,Completada,312
+238,38,2022-05-24,-1,Transferencia,Pendiente,85
+220,39,2022-09-07,7492.77,Retiro,Completada,451
+5,39,2023-10-14,4277.89,Transferencia,Completada,402
+127,39,2021-06-13,2478.47,Retiro,Pendiente,
+36,40,2023-03-12,6425.95,No identificado,Completada,
+476,40,2023-10-28,846.45,Transferencia,Pendiente,230
+323,41,2023-01-21,7321.92,No identificado,Indeterminado,1
+473,41,2023-01-20,2746.97,No identificado,Fallida,564
+181,41,2021-07-05,1832.39,No identificado,Indeterminado,110
+425,41,2021-03-17,1776.84,Retiro,Pendiente,
+200,42,2022-06-29,9844.6,Retiro,Fallida,
+162,42,2023-10-24,8363.82,Retiro,Pendiente,482
+16,43,2021-01-12,1664.02,Retiro,Indeterminado,
+307,45,2021-09-16,9022.04,Depósito,Completada,247
+128,45,2023-05-11,4602.27,Depósito,Fallida,3
+3,45,2022-07-13,4034.2,Transferencia,Fallida,300
+498,45,2023-05-08,2601.62,No identificado,Indeterminado,299
+430,45,2023-10-12,-1,Transferencia,Fallida,154
+139,46,2022-11-02,6217.44,Retiro,Fallida,75
+337,46,2023-07-24,5225.86,Retiro,Completada,264
+345,46,2022-08-19,3859.99,Depósito,Indeterminado,22
+396,46,2022-07-28,2259.01,Transferencia,Fallida,
+49,47,2023-05-02,8044.53,Retiro,Fallida,477
+498,47,2021-02-07,2699.81,Transferencia,Indeterminado,
+250,47,2022-01-10,181.35,Depósito,Fallida,337
+35,49,2021-10-26,6221.88,Depósito,Pendiente,79
+446,49,2021-08-08,3236.79,Transferencia,Fallida,
+91,49,2022-01-10,1294.39,Transferencia,Fallida,76
+444,49,2023-12-31,-1,Transferencia,Pendiente,720
+484,50,2023-05-14,1389.81,Depósito,Completada,161
+188,50,2022-12-04,-1,Retiro,Pendiente,
+337,51,2022-05-28,4020.89,Depósito,Pendiente,82
+20,51,2021-12-07,3425.81,Retiro,Pendiente,
+467,51,2022-03-07,1963.51,Retiro,Fallida,90
+328,52,2022-09-19,7208.23,Transferencia,Completada,114
+458,52,2023-12-14,5036.94,Retiro,Indeterminado,451
+134,53,2021-07-23,9577.31,Transferencia,Pendiente,
+27,53,2022-04-17,1426.32,Depósito,Completada,160
+296,53,2021-11-08,237.04,Depósito,Completada,108
+389,55,2021-10-08,9662.55,Retiro,Fallida,
+358,55,2022-02-02,8835.21,Retiro,Indeterminado,117
+237,55,2023-03-10,2522.94,Retiro,Pendiente,401
+238,56,2023-03-23,9196.69,Transferencia,Fallida,13
+90,56,2023-11-19,3912.41,Retiro,Pendiente,241
+143,56,2023-12-31,1977.94,Retiro,Pendiente,42
+70,57,2022-04-21,7835.63,Transferencia,Indeterminado,
+153,57,2023-12-06,6944.1,Retiro,Pendiente,594
+229,58,2021-01-12,9451.87,Depósito,Fallida,
+357,58,2021-06-02,7691.17,No identificado,Indeterminado,141
+161,58,2023-12-31,5790.52,Transferencia,Pendiente,33
+424,58,2023-11-28,2478.1,Depósito,Completada,295
+97,58,2023-02-06,1580.94,Transferencia,Indeterminado,614
+78,59,2022-01-18,9516.21,Depósito,Fallida,158
+139,59,2022-09-17,6306.54,No identificado,Pendiente,242
+317,59,2023-05-19,3862,Depósito,Indeterminado,60
+454,59,2023-01-05,2408,Depósito,Completada,110
+476,59,2021-08-13,1068.27,Transferencia,Indeterminado,
+20,59,2023-03-20,541.57,Transferencia,Pendiente,74
+41,59,2023-12-31,-1,Retiro,Pendiente,226
+89,60,2022-12-11,3637.67,No identificado,Fallida,
+320,60,2023-06-10,1007.58,Depósito,Pendiente,181
+158,60,2023-11-22,81.04,Transferencia,Completada,165
+404,61,2022-12-25,9748.14,Depósito,Completada,141
+45,61,2022-05-13,6634.09,No identificado,Indeterminado,186
+200,61,2021-11-08,3146.45,No identificado,Fallida,
+189,61,2022-08-06,2125.75,No identificado,Fallida,85
+393,62,2023-07-28,9453.74,Transferencia,Completada,215
+411,63,2021-06-04,9756.92,No identificado,Indeterminado,102
+143,63,2021-02-22,9663.39,Depósito,Indeterminado,15
+133,63,2023-06-27,7833.54,Retiro,Indeterminado,568
+72,63,2021-02-07,3864.58,Retiro,Pendiente,
+234,63,2021-12-06,3284.34,No identificado,Completada,185
+194,64,2021-09-09,9648.8,Transferencia,Fallida,
+251,64,2022-11-22,6106.26,Depósito,Completada,129
+369,64,2022-12-17,3944.64,No identificado,Fallida,25
+442,64,2022-07-16,3549.11,Transferencia,Fallida,310
+215,65,2022-03-12,7762.73,No identificado,Fallida,302
+357,65,2023-09-20,7605.73,No identificado,Fallida,557
+254,65,2021-05-14,5825.99,Retiro,Completada,76
+78,65,2021-02-27,2784.14,Transferencia,Pendiente,
+200,67,2021-11-08,9591.09,Depósito,Indeterminado,
+273,68,2021-04-23,9315.72,Retiro,Pendiente,
+159,68,2022-05-12,7189.99,Depósito,Completada,308
+192,68,2021-07-08,1061.11,Depósito,Completada,76
+439,69,2023-05-30,5017.39,Transferencia,Completada,222
+494,69,2022-10-20,49.04,Depósito,Completada,161
+378,70,2023-03-28,9553.48,Transferencia,Pendiente,11
+91,70,2023-01-05,8854.91,Transferencia,Pendiente,213
+442,70,2023-03-17,2306.17,Retiro,Fallida,71
+123,70,2022-06-06,1713.2,Retiro,Pendiente,135
+119,70,2022-01-22,265.72,Retiro,Completada,
+75,72,2021-04-04,7012.1,No identificado,Indeterminado,
+25,72,2021-12-18,4543.02,No identificado,Completada,258
+123,72,2023-03-11,1373.2,No identificado,Completada,203
+368,72,2022-08-20,549.43,Depósito,Indeterminado,245
+430,73,2023-04-17,8352.04,Depósito,Invalido,433
+419,73,2022-02-08,5658.85,Depósito,Indeterminado,96
+232,73,2021-01-21,3530.68,Retiro,Indeterminado,
+198,73,2021-11-04,2777.27,Depósito,Completada,287
+110,74,2023-05-16,5423.83,No identificado,Completada,603
+489,74,2021-09-20,3310.93,Depósito,Fallida,
+52,74,2023-05-18,453.61,Depósito,Completada,2
+48,76,2021-01-29,3911.15,No identificado,Fallida,
+73,77,2022-05-16,9382.81,Retiro,Completada,472
+442,77,2023-08-14,5309.96,Transferencia,Completada,455
+169,77,2023-11-21,4097.5,Retiro,Indeterminado,99
+457,78,2022-10-25,9278.03,Depósito,Completada,382
+226,78,2023-10-18,4979.9,No identificado,Fallida,358
+4,78,2021-10-08,2300.72,Transferencia,Pendiente,
+466,79,2021-10-09,8884.89,Depósito,Indeterminado,
+137,79,2022-08-10,6986.67,Retiro,Completada,206
+295,79,2022-01-16,5193.9,Retiro,Pendiente,99
+248,80,2023-04-17,9239.58,Transferencia,Fallida,183
+413,80,2023-12-31,5817.41,Transferencia,Invalido,258
+306,80,2022-10-16,4029,Depósito,Fallida,101
+252,80,2022-07-07,618.83,Depósito,Completada,
+170,81,2021-07-02,9320.84,Transferencia,Completada,
+473,81,2023-08-31,7362.74,Retiro,Completada,280
+233,81,2022-11-24,2450.15,No identificado,Completada,330
+354,81,2021-12-29,1091.67,Depósito,Indeterminado,180
+138,82,2022-07-16,9959.63,Depósito,Completada,177
+93,82,2022-01-20,9957.06,Transferencia,Indeterminado,111
+285,82,2023-06-15,9525.73,No identificado,Indeterminado,334
+220,82,2021-02-10,6986.39,Retiro,Completada,
+423,82,2021-10-01,6561.98,Depósito,Fallida,111
+17,82,2021-03-29,4759.81,Transferencia,Completada,47
+53,82,2021-06-12,1488.04,No identificado,Indeterminado,69
+499,82,2021-04-04,-1,No identificado,Invalido,6
+63,83,2021-01-09,9414,Depósito,Fallida,
+440,83,2022-10-31,6013.3,No identificado,Completada,140
+273,83,2022-06-13,5832.14,Retiro,Fallida,463
+222,83,2021-03-07,129.62,No identificado,Fallida,57
+372,84,2021-03-31,7642.2,Retiro,Completada,
+215,84,2023-05-22,823.33,No identificado,Fallida,782
+462,85,2021-07-10,3395.29,Depósito,Pendiente,
+209,86,2023-09-19,1965.27,Retiro,Fallida,656
+329,86,2021-12-02,1579.62,No identificado,Invalido,145
+304,87,2022-06-10,7885.81,Retiro,Pendiente,
+30,87,2023-06-03,-1,No identificado,Invalido,358
+329,88,2021-12-18,5969.33,No identificado,Pendiente,335
+2,88,2023-02-08,1129.56,Retiro,Completada,417
+263,88,2021-01-17,490.91,Retiro,Completada,
+203,89,2023-03-26,9630.7,No identificado,Completada,655
+269,89,2023-03-29,9519.92,Depósito,Fallida,3
+231,89,2023-11-20,8865.21,Retiro,Completada,236
+43,89,2021-06-09,2201.6,No identificado,Indeterminado,138
+32,89,2021-01-22,-1,Depósito,Pendiente,
+371,90,2021-11-19,8513.82,Transferencia,Invalido,
+155,90,2023-06-11,7422.79,Transferencia,Completada,8
+429,90,2023-06-03,6887.43,No identificado,Fallida,13
+121,90,2022-11-08,4358.53,No identificado,Fallida,354
+174,90,2023-05-21,2269.59,Retiro,Completada,194
+380,91,2022-12-25,141.76,Depósito,Pendiente,
+481,92,2023-05-26,3484,Transferencia,Completada,554
+32,92,2023-06-02,1205.04,No identificado,Indeterminado,7
+272,92,2021-11-18,-1,Retiro,Indeterminado,
+91,93,2023-09-10,1141.74,Depósito,Indeterminado,100
+228,94,2023-01-26,4655.69,Transferencia,Completada,
+161,94,2023-03-17,-1,Retiro,Fallida,50
+390,94,2023-12-31,-1,Transferencia,Pendiente,289
+340,95,2021-03-30,4570.39,Retiro,Fallida,
+94,96,2021-08-06,9877.56,Transferencia,Completada,126
+38,96,2023-12-31,9077.72,Transferencia,Fallida,281
+285,96,2023-03-25,7912.12,Retiro,Pendiente,596
+312,96,2021-04-02,5315.9,Retiro,Indeterminado,3
+191,97,2021-11-27,7894.24,Transferencia,Completada,
+304,97,2023-02-26,7850.93,Depósito,Indeterminado,456
+484,98,2022-12-14,5538.99,Depósito,Fallida,
+426,99,2021-03-04,9742.31,Retiro,Completada,
+479,99,2021-10-15,9154.55,No identificado,Completada,3
+451,99,2023-05-28,6476.08,Depósito,Indeterminado,306
+466,99,2022-07-26,5638.49,No identificado,Pendiente,245
+429,99,2021-10-12,5049.38,Retiro,Completada,222
+96,99,2021-11-23,5010.19,Depósito,Pendiente,39
+285,100,2022-02-11,8676.56,Depósito,Pendiente,
+495,101,2023-08-01,1974.46,Retiro,Fallida,536
+131,102,2023-08-14,6893.33,No identificado,Fallida,609
+224,102,2023-10-17,2021.5,Transferencia,Indeterminado,64
+417,102,2021-12-13,1152.9,No identificado,Pendiente,
+489,103,2021-03-05,3866.78,No identificado,Pendiente,
+153,103,2022-05-14,1863.48,Depósito,Pendiente,435
+339,103,2022-12-26,-1,Depósito,Indeterminado,226
+429,104,2022-06-23,4411.88,Transferencia,Completada,
+267,104,2022-09-30,420.77,Retiro,Pendiente,99
+332,105,2023-09-24,8789.91,Transferencia,Completada,30
+126,105,2023-08-25,8614.32,Depósito,Fallida,329
+466,106,2021-10-16,8651.27,Transferencia,Pendiente,258
+189,106,2023-12-31,5504.43,No identificado,Pendiente,792
+33,106,2021-10-30,1150.08,Retiro,Completada,14
+443,106,2021-01-31,726.39,Retiro,Completada,
+334,107,2022-08-15,8154.94,Retiro,Pendiente,131
+233,107,2022-04-06,1033.95,Depósito,Fallida,
+160,108,2021-11-26,9393.6,Transferencia,Fallida,320
+215,108,2021-01-10,4462.66,Retiro,Completada,
+284,108,2023-05-16,2622.97,Retiro,Indeterminado,520
+269,108,2021-12-12,-1,Transferencia,Indeterminado,16
+134,109,2021-01-21,8485.75,No identificado,Fallida,
+179,109,2021-09-19,4670.5,No identificado,Pendiente,241
+133,109,2021-10-18,862.62,No identificado,Pendiente,29
+91,110,2021-05-06,3568.2,Retiro,Pendiente,
+457,111,2023-02-17,7457.55,Retiro,Pendiente,652
+255,111,2023-09-21,6333.93,Transferencia,Fallida,216
+346,112,2023-08-21,8878.89,No identificado,Indeterminado,32
+293,112,2023-07-20,7305.17,Retiro,Pendiente,245
+261,112,2022-07-15,3096.38,Transferencia,Fallida,531
+33,112,2022-11-17,2123.77,Depósito,Pendiente,125
+400,112,2021-01-30,893.28,Retiro,Fallida,
+257,113,2022-12-04,4593.31,No identificado,Fallida,92
+3,113,2022-09-03,3726.72,Depósito,Completada,522
+349,113,2021-03-30,1737.59,No identificado,Pendiente,
+174,114,2021-11-06,9442.97,Retiro,Completada,166
+292,114,2021-05-24,7180.35,Retiro,Fallida,
+137,114,2022-09-15,3798.65,Depósito,Fallida,313
+35,115,2023-01-22,9842.36,No identificado,Indeterminado,419
+117,115,2021-11-29,3059.61,Retiro,Fallida,
+218,115,2023-11-18,-1,No identificado,Completada,300
+156,116,2021-08-27,3941.77,Depósito,Pendiente,
+411,117,2022-12-15,3468.54,No identificado,Pendiente,152
+103,117,2022-07-16,1483.98,No identificado,Invalido,323
+181,118,2023-12-31,9394.4,Transferencia,Indeterminado,441
+426,118,2022-10-16,6305.67,Retiro,Fallida,8
+74,118,2022-10-08,1735.11,No identificado,Indeterminado,
+407,119,2022-12-22,8311.78,Transferencia,Indeterminado,341
+65,119,2023-08-15,7029.34,No identificado,Pendiente,129
+29,119,2023-12-31,4476.6,Transferencia,Completada,138
+269,119,2022-01-15,1027.48,Transferencia,Fallida,
+282,119,2023-04-08,190.81,Transferencia,Indeterminado,107
+435,120,2023-06-18,3658.79,Depósito,Invalido,825
+323,120,2021-03-15,2892.28,Retiro,Fallida,
+304,121,2021-08-15,9259.25,Retiro,Completada,
+228,121,2023-05-07,5451.19,Depósito,Pendiente,630
+130,121,2023-12-21,-1,Transferencia,Pendiente,228
+386,122,2021-10-14,7323.78,No identificado,Pendiente,
+472,122,2022-10-24,4895.63,No identificado,Pendiente,375
+406,123,2021-03-26,9844.09,Transferencia,Indeterminado,
+225,123,2022-08-20,9546.85,No identificado,Fallida,359
+212,123,2021-04-01,5485.05,Depósito,Completada,6
+432,123,2021-08-26,4291.47,Depósito,Pendiente,147
+34,123,2023-01-25,3320.16,Depósito,Completada,158
+423,124,2021-09-04,8749.2,Depósito,Indeterminado,103
+428,124,2021-03-17,6490.01,No identificado,Completada,
+261,124,2023-06-26,1121.08,No identificado,Indeterminado,660
+319,124,2021-03-27,686.96,No identificado,Fallida,10
+325,124,2021-05-24,-1,Transferencia,Completada,58
+453,124,2023-08-08,-1,Transferencia,Indeterminado,43
+89,125,2022-09-20,8117.5,Retiro,Indeterminado,
+27,125,2022-10-01,6851.77,Retiro,Completada,11
+59,126,2023-12-12,5766.31,Depósito,Fallida,1044
+421,126,2021-01-19,592.76,Retiro,Indeterminado,
+111,126,2021-02-01,530.41,No identificado,Fallida,13
+403,127,2023-02-21,1369.25,Transferencia,Pendiente,207
+107,127,2022-07-29,1002.72,No identificado,Indeterminado,258
+477,127,2021-11-13,983.57,Retiro,Completada,
+211,128,2023-12-31,9971.7,Retiro,Pendiente,173
+468,128,2021-07-16,6323.38,Depósito,Indeterminado,
+336,128,2023-07-11,5116.6,No identificado,Indeterminado,579
+224,128,2021-12-09,477.39,Transferencia,Fallida,146
+266,129,2021-04-13,4021.01,Transferencia,Fallida,
+305,129,2021-12-25,3970.33,Retiro,Fallida,256
+26,130,2021-04-20,7827.34,Retiro,Pendiente,
+120,130,2021-12-06,7234.46,Retiro,Fallida,230
+326,130,2022-01-25,5594.86,Depósito,Completada,50
+341,130,2023-06-25,4398.39,Depósito,Fallida,12
+145,130,2023-06-13,3821.67,Depósito,Fallida,504
+293,131,2023-01-22,7803.27,Transferencia,Completada,398
+407,131,2021-12-20,1709.36,Depósito,Indeterminado,48
+451,131,2021-11-02,1049.21,Depósito,Completada,
+123,132,2022-06-20,9410.98,No identificado,Completada,240
+53,132,2021-10-23,8975.03,Retiro,Indeterminado,233
+30,132,2021-03-04,7936,Transferencia,Fallida,17
+16,132,2022-10-06,7650.03,Depósito,Fallida,98
+185,132,2022-06-30,7446.1,Transferencia,Pendiente,10
+129,132,2021-02-15,4203.25,Transferencia,Indeterminado,
+476,132,2023-07-13,1471.11,Transferencia,Pendiente,280
+323,133,2021-07-09,4996.19,Transferencia,Pendiente,
+476,133,2022-02-21,3737.83,Depósito,Pendiente,227
+91,134,2023-10-18,8873.88,No identificado,Indeterminado,340
+289,134,2022-04-30,8517.85,Depósito,Completada,30
+364,134,2022-11-12,6978.1,Retiro,Invalido,28
+492,134,2022-03-31,2321.91,Depósito,Fallida,38
+148,134,2022-10-15,293.07,Depósito,Completada,168
+116,135,2022-07-16,9485.26,Depósito,Pendiente,202
+151,135,2021-12-26,7632.73,Transferencia,Indeterminado,111
+159,135,2021-09-06,4040.88,Retiro,Pendiente,
+452,136,2023-10-12,9759.48,Depósito,Indeterminado,84
+272,136,2023-02-22,9126.08,Transferencia,Indeterminado,457
+354,136,2023-07-20,6895.82,Retiro,Pendiente,148
+343,136,2021-11-22,4761.5,No identificado,Completada,43
+445,136,2021-10-10,-1,Depósito,Fallida,
+312,137,2021-02-14,7085.8,Retiro,Indeterminado,
+56,137,2022-12-13,6549.78,Depósito,Pendiente,261
+79,137,2021-09-12,3270.97,No identificado,Indeterminado,210
+205,137,2023-05-02,3137.64,Depósito,Fallida,140
+33,137,2022-03-27,1410.16,Retiro,Fallida,158
+215,137,2021-10-20,1381,Retiro,Indeterminado,38
+168,138,2022-10-12,6726.35,Retiro,Completada,
+254,139,2023-12-31,7477.33,Depósito,Completada,0
+2,139,2022-12-09,5761.16,No identificado,Indeterminado,58
+434,139,2023-12-31,4183.44,No identificado,Pendiente,387
+187,140,2021-01-04,8059.24,Transferencia,Pendiente,
+471,140,2023-12-31,4066.25,Transferencia,Fallida,0
+490,140,2021-08-05,1452.88,No identificado,Completada,213
+35,140,2023-12-31,-1,Depósito,Fallida,878
+313,141,2023-03-22,9686.8,Retiro,Pendiente,135
+139,141,2022-11-07,8607.03,No identificado,Completada,
+43,142,2021-11-14,9971.63,No identificado,Completada,165
+124,142,2022-05-18,7439.15,Retiro,Pendiente,185
+170,142,2021-06-02,6940.86,Depósito,Fallida,
+148,142,2023-01-26,2020.41,Retiro,Fallida,253
+193,143,2022-02-05,4695.52,Retiro,Fallida,
+302,144,2021-04-29,6962,Retiro,Indeterminado,
+60,144,2023-07-19,4102.77,No identificado,Invalido,759
+496,144,2021-06-20,2991.45,No identificado,Pendiente,52
+250,145,2023-10-13,7873.8,Transferencia,Fallida,161
+224,145,2022-07-12,2096.87,Depósito,Indeterminado,
+160,145,2023-02-06,-1,No identificado,Invalido,209
+432,145,2023-05-05,-1,Retiro,Indeterminado,88
+463,146,2021-12-14,4292.99,No identificado,Pendiente,
+256,147,2023-02-25,7000.99,Transferencia,Indeterminado,57
+410,147,2023-05-07,4541.97,No identificado,Completada,71
+166,147,2021-05-13,2616.7,No identificado,Completada,
+17,147,2022-12-30,1688.23,No identificado,Fallida,596
+481,148,2021-11-24,9035.82,No identificado,Indeterminado,234
+362,148,2022-04-24,3633.34,Depósito,Indeterminado,151
+234,148,2021-04-04,3427.62,Transferencia,Fallida,
+127,149,2022-07-10,8064.22,Retiro,Pendiente,77
+439,150,2023-12-23,5510.62,Transferencia,Pendiente,550
+290,150,2022-06-21,1253.73,No identificado,Indeterminado,
+150,152,2023-12-31,5628.02,No identificado,Pendiente,8
+430,153,2022-07-05,6827.25,Transferencia,Pendiente,223
+284,153,2022-09-21,5316.38,Depósito,Completada,78
+472,153,2021-01-21,4448.37,Depósito,Fallida,
+136,153,2021-11-24,3903.69,Transferencia,Fallida,307
+278,154,2022-05-24,8334.29,Retiro,Indeterminado,115
+448,154,2022-01-29,4981.85,Retiro,Fallida,
+357,154,2023-07-29,4321.36,Depósito,Fallida,431
+258,155,2022-10-03,9985.67,Depósito,Pendiente,640
+78,155,2021-01-01,2609.15,No identificado,Completada,
+244,156,2021-01-14,2925.33,No identificado,Indeterminado,
+52,158,2022-10-07,7384.96,Transferencia,Completada,74
+498,158,2022-07-25,5974.87,Depósito,Completada,20
+132,158,2022-07-05,3813.33,Retiro,Indeterminado,537
+445,159,2023-05-02,9416.51,Transferencia,Indeterminado,386
+216,159,2021-06-12,7666.45,Transferencia,Completada,
+486,159,2022-04-11,5308.47,Depósito,Completada,10
+147,159,2022-04-01,4330.78,Depósito,Fallida,289
+194,159,2021-06-16,684.59,No identificado,Pendiente,4
+162,160,2021-01-28,6313.58,Transferencia,Completada,
+385,161,2021-09-21,7324.66,No identificado,Fallida,236
+365,161,2023-10-17,7295.74,No identificado,Fallida,756
+117,161,2023-12-31,-1,Transferencia,Fallida,75
+377,162,2022-03-22,9073,No identificado,Pendiente,
+478,162,2023-12-13,8777.02,Depósito,Pendiente,195
+187,162,2022-07-06,6519.97,Retiro,Completada,106
+223,162,2023-06-01,6491.19,No identificado,Pendiente,28
+146,162,2023-12-24,4057.15,No identificado,Fallida,11
+257,162,2023-05-04,1176.44,Transferencia,Completada,302
+15,163,2023-07-02,2439.61,Retiro,Indeterminado,36
+417,163,2023-05-27,-1,Transferencia,Pendiente,
+187,163,2023-08-08,-1,Retiro,Pendiente,37
+249,163,2023-12-22,-1,No identificado,Fallida,136
+467,164,2023-09-26,7148.09,Depósito,Completada,509
+309,164,2022-05-05,6984.81,Transferencia,Fallida,
+339,164,2023-12-14,4402.26,No identificado,Fallida,79
+430,165,2023-06-19,149.39,No identificado,Invalido,571
+459,165,2021-11-25,-1,Transferencia,Pendiente,
+492,166,2022-05-20,4711.16,No identificado,Indeterminado,167
+19,166,2021-12-04,3244.48,Transferencia,Completada,30
+330,166,2021-11-04,2800.12,Depósito,Fallida,
+142,167,2023-03-23,6939.55,Depósito,Fallida,307
+459,167,2023-12-31,1684.63,Depósito,Indeterminado,157
+341,167,2023-07-27,1382.46,Transferencia,Fallida,126
+477,168,2023-07-11,7583.58,Retiro,Completada,566
+428,168,2021-12-22,4677.21,Transferencia,Completada,
+261,168,2023-12-31,-1,No identificado,Invalido,173
+482,169,2023-06-19,5211.16,No identificado,Indeterminado,
+112,170,2022-06-11,9574.4,Depósito,Indeterminado,169
+164,170,2023-12-31,6464.54,Transferencia,Completada,0
+178,170,2021-12-24,4260.39,Transferencia,Fallida,
+347,170,2023-12-31,4211.18,Depósito,Invalido,568
+485,171,2021-08-10,6974.81,Retiro,Completada,
+485,172,2023-09-27,1455.86,Depósito,Completada,778
+397,173,2022-01-01,8502.14,Retiro,Pendiente,223
+250,173,2023-06-27,3132.94,Transferencia,Completada,542
+108,173,2021-05-23,2016.16,Retiro,Indeterminado,
+496,173,2023-11-28,384,No identificado,Pendiente,154
+342,174,2023-08-01,7741.23,Depósito,Indeterminado,
+42,175,2022-12-26,8385.28,No identificado,Pendiente,438
+168,175,2021-10-14,6127.63,No identificado,Indeterminado,25
+109,175,2021-09-19,4830.22,Transferencia,Pendiente,
+275,176,2023-02-13,9845.78,No identificado,Fallida,336
+360,176,2022-03-14,3998.7,No identificado,Pendiente,
+47,177,2023-12-31,6431.05,Transferencia,Invalido,652
+13,177,2022-03-19,3709.96,Depósito,Completada,92
+64,177,2021-12-17,469.12,No identificado,Indeterminado,
+416,178,2023-03-20,7968.14,Retiro,Completada,115
+433,178,2022-08-19,6300.84,No identificado,Completada,
+337,178,2022-11-25,4687.71,No identificado,Pendiente,98
+237,178,2023-08-08,4434.79,Transferencia,Completada,141
+115,178,2023-09-05,3656.29,Depósito,Invalido,28
+35,179,2021-08-20,2931.02,Retiro,Completada,182
+205,179,2023-02-25,1575.31,Transferencia,Indeterminado,554
+346,179,2021-02-19,1271.14,No identificado,Completada,
+482,180,2023-10-07,9031.75,Depósito,Indeterminado,408
+426,180,2022-08-25,1886.23,Retiro,Completada,326
+70,180,2021-10-03,31.45,Retiro,Fallida,
+362,181,2021-07-24,8673.04,Retiro,Indeterminado,172
+337,181,2023-01-12,8318.82,No identificado,Fallida,23
+374,181,2021-02-02,7912.54,Depósito,Fallida,
+401,181,2023-09-06,7083.87,Retiro,Indeterminado,237
+49,181,2023-10-24,6271.85,Retiro,Fallida,48
+21,181,2022-12-20,1729.98,Transferencia,Pendiente,514
+35,182,2022-11-11,6731.44,No identificado,Completada,39
+185,182,2023-01-10,5189.37,Transferencia,Fallida,60
+471,182,2023-01-13,2613.64,Depósito,Fallida,3
+123,182,2023-04-27,2179.38,Transferencia,Fallida,104
+140,182,2022-08-24,244.65,Retiro,Pendiente,
+70,182,2022-10-03,78.63,No identificado,Indeterminado,40
+24,183,2022-08-17,4049.27,No identificado,Indeterminado,
+248,183,2023-01-11,-1,Retiro,Fallida,147
+37,184,2022-10-02,6520.5,Transferencia,Completada,291
+24,184,2021-12-15,4817.12,Depósito,Fallida,
+22,185,2022-03-09,6099.48,No identificado,Fallida,
+71,186,2022-03-17,9622.96,Retiro,Pendiente,148
+414,186,2021-08-28,9326.85,No identificado,Indeterminado,
+38,186,2021-10-20,8674.66,Depósito,Indeterminado,53
+252,186,2023-10-19,8424.65,Transferencia,Indeterminado,187
+129,186,2023-03-14,6765.92,Transferencia,Fallida,343
+311,186,2023-04-15,5031.37,Depósito,Indeterminado,32
+109,186,2022-04-05,3246.66,No identificado,Completada,19
+471,187,2021-06-26,6333.46,Depósito,Indeterminado,
+270,187,2023-12-05,4074.11,Retiro,Fallida,892
+456,188,2023-12-17,7443.09,Depósito,Pendiente,382
+79,188,2022-11-30,6129.36,Retiro,Completada,
+363,189,2022-09-17,9538.72,Depósito,Fallida,186
+256,189,2022-11-11,9438.06,Retiro,Pendiente,55
+12,189,2022-03-15,9303.56,No identificado,Fallida,142
+275,189,2021-10-24,8338.75,Transferencia,Fallida,
+148,189,2023-12-31,7619.91,Transferencia,Invalido,415
+72,190,2021-03-29,6851.26,Retiro,Completada,6
+202,190,2021-07-16,5922.22,Retiro,Fallida,109
+294,190,2021-03-23,4009.95,Transferencia,Completada,
+367,191,2021-09-26,9768.93,Retiro,Indeterminado,211
+441,191,2023-11-15,7872.7,Transferencia,Completada,780
+58,191,2021-02-27,30.26,Depósito,Fallida,
+154,192,2021-03-15,9257.57,No identificado,Completada,
+370,192,2023-01-31,8781.29,No identificado,Pendiente,322
+493,192,2022-03-15,7744.01,Depósito,Fallida,365
+43,193,2021-12-01,9967.6,Transferencia,Completada,46
+371,193,2021-03-01,6665.63,No identificado,Fallida,
+494,193,2021-10-16,4133.49,No identificado,Completada,93
+443,193,2021-07-15,660.52,Depósito,Pendiente,136
+316,194,2021-07-23,7826.45,No identificado,Fallida,
+335,194,2023-12-31,6918.63,Depósito,Indeterminado,891
+115,195,2022-03-21,2063.57,Transferencia,Fallida,
+115,195,2023-05-14,1463.03,No identificado,Indeterminado,419
+29,196,2021-08-31,9074.51,Depósito,Completada,195
+193,196,2021-02-17,1074.09,Depósito,Pendiente,
+466,197,2022-05-15,6855.59,No identificado,Pendiente,455
+61,197,2021-02-14,-1,Depósito,Invalido,
+200,197,2023-12-31,-1,No identificado,Pendiente,595
+64,198,2022-07-20,7119.95,Retiro,Fallida,19
+247,198,2021-08-23,6693.27,Retiro,Pendiente,
+340,198,2022-07-01,4158.26,No identificado,Indeterminado,312
+5,198,2022-11-10,-1,Retiro,Completada,113
+54,199,2023-04-24,7403.14,Retiro,Completada,488
+80,199,2021-12-22,1804.8,Depósito,Fallida,
+183,200,2023-07-19,9015.2,Depósito,Indeterminado,121
+174,200,2023-03-20,6093,No identificado,Indeterminado,199
+409,200,2022-01-15,3287.03,No identificado,Fallida,
+266,200,2023-08-18,2990.45,Transferencia,Completada,30
+405,200,2022-09-02,452.56,Transferencia,Completada,230
